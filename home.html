@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home – Stud.ly</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- ========================================================
+       SITE HEADER
+       ======================================================== -->
+    <header class="site-header">
+
+        <a href="home.html" class="logo-box">Stud.ly</a>
+
+        <div class="d-flex align-items-center gap-3">
+            <button class="icon-circle">
+                <i class="bi bi-bell"></i>
+            </button>
+
+            <button class="icon-circle">
+                <i class="bi bi-chat"></i>
+            </button>
+
+            <span class="user-name">
+                Jevlin Misael Chandra
+                <i class="bi bi-chevron-down" style="font-size:0.75rem;"></i>
+            </span>
+
+            <div class="user-avatar">JM</div>
+        </div>
+
+    </header>
+
+    <!-- ========================================================
+       NAVIGATION BAR
+       ======================================================== -->
+    <nav class="site-nav">
+
+        <ul class="nav-links">
+            <li>
+                <a href="home.html" class="active">
+                    <i class="bi bi-house-fill"></i> Home
+                </a>
+            </li>
+            <li>
+                <a href="dashboard.html">
+                    <i class="bi bi-grid-fill"></i> Dashboard
+                </a>
+            </li>
+            <li>
+                <a href="courses.html">
+                    <i class="bi bi-book-fill"></i> Courses
+                </a>
+            </li>
+        </ul>
+
+        <div class="nav-search-box py-2">
+            <i class="bi bi-search"></i>
+            <input class="nav-search-input" type="search" placeholder="Search courses, topics, etc.">
+        </div>
+
+    </nav>
+
+    <!-- ========================================================
+       MAIN CONTENT
+       ======================================================== -->
+    <main class="page-content">
+
+        <!-- ---- Video Thumbnails Row ---- -->
+        <div class="row g-4 mb-5" style="max-width: 900px; margin-left: auto; margin-right: auto;">
+
+            <!-- Video 1: SKS? -->
+            <div class="col-4">
+                <div class="video-card">
+                    <div class="video-thumb"
+                        style="background: linear-gradient(135deg, #1a1a2e, #16213e); flex-direction:column; gap:6px;">
+                        <span style="font-size:1.8rem; font-weight:800; color:#f5c518; letter-spacing:2px;">SKS?</span>
+                        <span style="font-size:0.65rem; color:rgba(255,255,255,0.7); text-align:center;">Semester
+                            Credits Units</span>
+                    </div>
+                    <div class="play-overlay">
+                        <i class="bi bi-play-fill"></i>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Video 2: Blended Learning -->
+            <div class="col-4">
+                <div class="video-card">
+                    <div class="video-thumb"
+                        style="background: linear-gradient(135deg, #fff9f0, #ffe4c4); flex-direction:column; gap:4px;">
+                        <span
+                            style="font-size:0.75rem; font-weight:700; color:#f97316; text-align:center; line-height:1.3;">BLENDED
+                            LEARNING</span>
+                        <span style="font-size:0.6rem; color:#374151; text-align:center;">@ UNIVERSITAS CIPUTRA</span>
+                    </div>
+                    <div class="play-overlay">
+                        <i class="bi bi-play-fill"></i>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Video 3: Tipe-Tipe Mahasiswa Online -->
+            <div class="col-4">
+                <div class="video-card">
+                    <div class="video-thumb"
+                        style="background: linear-gradient(135deg, #0ea5e9, #0369a1); flex-direction:column; gap:4px;">
+                        <span
+                            style="font-size:0.7rem; font-weight:700; color:#fde047; text-align:center; letter-spacing:1px;">TIPE-TIPE</span>
+                        <span style="font-size:0.75rem; font-weight:800; color:#ffffff; text-align:center;">MAHASISWA
+                            ONLINE</span>
+                    </div>
+                    <div class="play-overlay">
+                        <i class="bi bi-play-fill"></i>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- End video row -->
+
+        <!-- ---- Course Categories Card ---- -->
+        <div class="content-card" style="max-width: 900px; margin-left: auto; margin-right: auto;">
+
+            <h2 class="card-title mb-1">Course Categories</h2>
+            <hr class="section-divider">
+
+            <!-- Category Accordion List -->
+            <div class="category-list">
+
+                <!-- General Information (no expand) -->
+                <div class="cat-item">
+                    <button class="cat-toggle">
+                        <span class="cat-icon-label">
+                            <i class="bi bi-folder" style="color: var(--muted);"></i>
+                            General Information [6]
+                        </span>
+                    </button>
+                </div>
+
+                <!-- 2025/2026 Genap (expanded by default) -->
+                <div class="cat-item">
+
+                    <button class="cat-toggle" data-bs-toggle="collapse" data-bs-target="#genap-content"
+                        aria-expanded="true">
+                        <span class="cat-icon-label">
+                            <i class="bi bi-folder" style="color: var(--muted);"></i>
+                            2025/2026 Genap
+                        </span>
+                        <i class="bi bi-chevron-up" style="color: var(--muted); font-size:0.8rem;"></i>
+                    </button>
+
+                    <div id="genap-content" class="collapse show">
+                        <div class="cat-sub-list">
+
+                            <div class="cat-sub-item">
+                                <i class="bi bi-folder" style="color: var(--muted); font-size:0.875rem;"></i>
+                                Biro Perkuliahan Umum [3]
+                            </div>
+
+                            <div class="cat-sub-item">
+                                <i class="bi bi-folder" style="color: var(--muted); font-size:0.875rem;"></i>
+                                IMT [4]
+                            </div>
+
+                            <div class="cat-sub-item">
+                                <i class="bi bi-folder" style="color: var(--muted); font-size:0.875rem;"></i>
+                                VCD [4]
+                            </div>
+
+                            <div class="cat-sub-item">
+                                <i class="bi bi-folder" style="color: var(--muted); font-size:0.875rem;"></i>
+                                MAN [7]
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- 2025/2026 Ganjil (expanded by default) -->
+                <div class="cat-item">
+
+                    <button class="cat-toggle" data-bs-toggle="collapse" data-bs-target="#ganjil-content"
+                        aria-expanded="true">
+                        <span class="cat-icon-label">
+                            <i class="bi bi-folder" style="color: var(--muted);"></i>
+                            2025/2026 Ganjil
+                        </span>
+                        <i class="bi bi-chevron-up" style="color: var(--muted); font-size:0.8rem;"></i>
+                    </button>
+
+                    <div id="ganjil-content" class="collapse show">
+                        <div class="cat-sub-list">
+
+                            <div class="cat-sub-item">
+                                <i class="bi bi-folder" style="color: var(--muted); font-size:0.875rem;"></i>
+                                Biro Perkuliahan Umum [3]
+                            </div>
+
+                            <div class="cat-sub-item">
+                                <i class="bi bi-folder" style="color: var(--muted); font-size:0.875rem;"></i>
+                                IMT [4]
+                            </div>
+
+                            <div class="cat-sub-item">
+                                <i class="bi bi-folder" style="color: var(--muted); font-size:0.875rem;"></i>
+                                VCD [4]
+                            </div>
+
+                            <div class="cat-sub-item">
+                                <i class="bi bi-folder" style="color: var(--muted); font-size:0.875rem;"></i>
+                                MAN [7]
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            <!-- End category-list -->
+
+        </div>
+        <!-- End content-card -->
+
+    </main>
+
+    <!-- ========================================================
+       SITE FOOTER
+       ======================================================== -->
+    <footer class="site-footer">
+        <div class="d-flex justify-content-between align-items-start flex-wrap gap-4">
+
+            <div>
+                <p class="footer-brand">Stud.ly</p>
+                <ul class="footer-links">
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Help Center</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                </ul>
+            </div>
+
+            <div class="d-flex flex-column align-items-end gap-3">
+                <button class="btn-accent">Contact Us</button>
+                <div class="d-flex gap-2">
+                    <a href="#" class="social-icon-btn"><i class="bi bi-instagram"></i></a>
+                    <a href="#" class="social-icon-btn"><i class="bi bi-twitter-x"></i></a>
+                    <a href="#" class="social-icon-btn"><i class="bi bi-youtube"></i></a>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Rotate chevron icon when accordion collapses/expands -->
+    <script>
+        document.querySelectorAll('[data-bs-toggle="collapse"]').forEach(function (btn) {
+            var target = document.querySelector(btn.getAttribute('data-bs-target'));
+            var icon = btn.querySelector('.bi-chevron-up, .bi-chevron-down');
+
+            target.addEventListener('show.bs.collapse', function () {
+                if (icon) {
+                    icon.classList.remove('bi-chevron-down');
+                    icon.classList.add('bi-chevron-up');
+                }
+            });
+
+            target.addEventListener('hide.bs.collapse', function () {
+                if (icon) {
+                    icon.classList.remove('bi-chevron-up');
+                    icon.classList.add('bi-chevron-down');
+                }
+            });
+        });
+    </script>
+
+</body>
+
+</html>
